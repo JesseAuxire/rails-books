@@ -5,3 +5,16 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+puts "Cleaning Databse..."
+Book.destroy_all
+
+puts "Creating Books"
+
+monte_cristo = Book.create(title: "Le Comte de Monte-Cristo", image: "", author: "Alexandre Dumas", genre: "Roman", description: "Le Comte de Monte-Cristo est un roman d'Alexandre Dumas, écrit avec la collaboration d'Auguste Maquet et dont la publication commence durant l'été 1844.")
+crime_et_chatiment = Book.create(title: "Crime et Châtiment", image: "", author: "Fiodor Dostoïevski", genre: "Roman", description: "Crime et Châtiment est un roman de l’écrivain russe Fiodor Dostoïevski publié en feuilleton en 1866 et en édition séparée en 1867. Archétype du roman psychologique, il est considéré comme l'une des plus grandes œuvres littéraires de l'Histoire.")
+pierre_et_sabre = Book.create(title: "La Pierre et le Sabre", image: "", author: "Eiji Yoshikawa", genre: "Roman", description: "La Pierre et le Sabre est le premier tome du roman japonais Musashi, d'Eiji Yoshikawa, qui relate d'une façon largement romancée la vie du samouraï Miyamoto Musashi, un célèbre escrimeur.")
+parfaite_lumiere = Book.create(title: "La Parfaite Lumière", image: "", author: "Eiji Yoshikawa", genre: "Roman", description: "La Parfaite Lumière est le nom du deuxième tome du roman japonais Musashi d'Eiji Yoshikawa relatant d'une façon largement romancée la vie du samouraï Miyamoto Musashi, un célèbre escrimeur.")
+bel_ami = Book.create(title: "Bel Ami", image: "", author: "Guy de Maupassant", genre: "Roman", description: "Bel-Ami est un roman réaliste de Guy de Maupassant, publié en 1885. Le roman paraît d'abord sous forme de feuilleton dans le quotidien Gil Blas, avant d'être édité en volume aux éditions Victor Havard. Les éditions Ollendorff publieront la première édition illustrée en 1895.")
+guerre_et_paix = Book.create(title: "Guerre et Paix", image: "", author: "Léon Tolstoï", genre: "Roman", description: "Guerre et Paix ou La Guerre et la Paix est un roman de l'écrivain russe Léon Tolstoï. Publié en feuilleton entre 1865 et 1869 dans Le Messager russe, ce livre narre l’histoire de la Russie à l’époque de Napoléon Iᵉʳ, notamment la campagne de Russie en 1812.")
+berserk = Book.create(title: "Berserk", image: "", author: " Kentarō Miura", genre: "Manga", description: "Berserk est un manga de dark fantasy de Kentarō Miura. Il est prépublié depuis 1989 dans les magazines Monthly Animal House puis Young Animal de l'éditeur Hakusensha, et 41 volumes sont sortis en décembre 2021. La version française est éditée par Glénat et 41 tomes sont sortis au 6 juillet 2022")
+vagabond = Book.create(title: "Vagabond", image: "", author: "Takehiko Inoue", genre: "Manga", description: "Vagabond est un manga de Takehiko Inoue, prépublié dans le magazine Weekly Morning depuis 1998 et toujours en cours de parution au Japon. Plus de trente volumes ont vu le jour aux éditions Kōdansha, et ont tous été régulièrement traduits en français aux éditions Tonkam.")
