@@ -1,2 +1,7 @@
-<h1>Books#index</h1>
-<p>Find me in app/views/books/index.html.erb</p>
+<h1>Favorite books</h1>
+<div class="container">
+    <% @books.each do |book| %>
+      <p><%= book.title %></p>
+      <%= link_to "See Book", book_path(book) %>
+    <% end %>
+</div>
