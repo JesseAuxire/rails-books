@@ -1,0 +1,8 @@
+<p><%= link_to ' Voir Livres', books_path, class: 'btn btn-primary'%></p>
+<p><%= link_to 'Retour au livre', book_path(@book), class: 'btn btn-primary'%></p>
+
+<div class="container bg-light mt-3 mb-5">
+  <h1 class="mb-3">Modifier Livre</h1>
+
+  <%= render "form" %>
+</div>

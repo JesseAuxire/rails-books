@@ -1,7 +1,15 @@
 <h1>Favorite books</h1>
+
 <div class="container">
-    <% @books.each do |book| %>
-      <p><%= book.title %></p>
-      <%= link_to "See Book", book_path(book) %>
+  <% @books.each do |book| %>
+  <%= link_to book, class: 'text-decoration-none' do  %>
+    <div class="card mb-3">
+      <div class="card-body">
+        <h5 class="card-title mb-1 text-dark"><%= book.title %></h5>
+        <p class="text-secondary"><%= book.description %></p>
+      </div>
+    </div>
     <% end %>
+  <% end %>
 </div>
+

@@ -1,0 +1,8 @@
+<%= simple_form_for @book do |f| %>
+  <%= f.input :title %>
+  <%= f.input :image, as: :file %>
+  <%= f.input :author %>
+  <%= f.input :genre %>
+  <%= f.input :description, as: :text %>
+  <%= f.submit "Publier", class: "btn btn-default btn-primary" %>
+<% end %>
