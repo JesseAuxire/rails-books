@@ -1,4 +1,7 @@
-<h1>Favorite books</h1>
+<div class="header d-flex justify-content-between p-3">
+  <h2>Favorite books</h1>
+  <%= link_to 'Ajouter livre', new_book_path, class: 'btn btn-primary' %>
+</div>
 
 <div class="container">
   <% @books.each do |book| %>
