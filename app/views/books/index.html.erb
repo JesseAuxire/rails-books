@@ -4,15 +4,16 @@
 </div>
 
 <div class="container">
-  <% @books.each do |book| %>
-  <%= link_to book, class: 'text-decoration-none' do  %>
-    <div class="card mb-3">
-      <div class="card-body">
-        <h5 class="card-title mb-1 text-dark"><%= book.title %></h5>
-        <p class="text-secondary"><%= book.description %></p>
-      </div>
+    <% @books.each do |book| %>
+    <%= link_to book, class: 'text-decoration-none' do  %>
+      <div class="card-product">
+        <%= image_tag(book.image) %>
+          <div class="card-product-infos">
+            <h2><%= book.title %></h2>
+            <p><%= book.author %></p>
+          </div>
+      <% end %>
     </div>
     <% end %>
-  <% end %>
 </div>
 
